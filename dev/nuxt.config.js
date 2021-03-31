@@ -11,10 +11,12 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [{src:"/js/bootstrap.bundle.min.js"}]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~assets/css/stylus'],
+  css: ['~assets/css/stylus',
+        '@assets/css/bootstrap.min.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
