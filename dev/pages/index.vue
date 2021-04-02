@@ -1,63 +1,30 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">rahtools</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <Header 
+    h1title="آقای رهگذر"
+    h2dec="آقای رهگذر یک ابزار برای جایگزینی متن لورم ایپسوم در ایران است."
+     />
+    <div class="row">
+      <div class="col-md-3 ms-5 d-md-block d-none bg-light">
+        آقای رهگذر
+      </div>
+      <div class="col-md-8 me-5 col-12 bg-light">
+        زبان:
+        نوع متن:
+        تعداد:
+        <hr>
+        تست
+        <button class="btn btn-primary">دانلود متن</button>
+        <button class="btn btn-outline-primary">کپی متن</button>
       </div>
     </div>
+    
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+
+  }
+
 </script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
