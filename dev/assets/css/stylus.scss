@@ -1,5 +1,46 @@
 body{
     background: #efefef;
     direction: rtl;
-    font-family: dana;
+    font-family: iransansx;
+}
+
+
+.ax-finaltext-rah{
+    height:300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(11, 94, 215) lightgrey;
+    text-align: justify;
+}
+.ax-selection select{
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #EFEFEF;
+    color: grey;
+
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.ax-selection .ax-select-arr{
+    position: relative;
+}
+.ax-selection .ax-select-arr::after {
+    content: "<>";
+    position: absolute;
+    font: 17px "Consolas", monospace;
+    color: grey;
+    transform: rotate(90deg);
+    left: 5px;
+    top: 25%;
+    padding: 0 0 2px;
+    border-bottom: none;
+    pointer-events: none;
+}
+.ax-selection option{
+    color:black;
 }
